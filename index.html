@@ -71,6 +71,23 @@
       color: #4d3e3e;
     }
 
+    .photo-circle {
+      display: flex;
+      justify-content: center;
+      gap: 1.5em;
+      flex-wrap: wrap;
+      padding-top: 1em;
+    }
+
+    .photo-circle img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
     .photo-grid {
       display: flex;
       justify-content: center;
@@ -83,7 +100,7 @@
       width: 150px;
       height: 150px;
       object-fit: cover;
-      border-radius: 50%;
+      border-radius: 8%;
       border: 3px solid #ddd;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
@@ -103,8 +120,8 @@
 
   <header>
     <h1>Noah's Ark Animal Services</h1>
-    <div class="photo-grid">
-      <img src="https://raw.githubusercontent.com/finnbunker/finnbunker.github.io/refs/heads/main/dog_photo_1.jpeg" alt="Dog 1">
+    <div class="photo-circle">
+      <img src="https://raw.githubusercontent.com/finnbunker/finnbunker.github.io/refs/heads/main/dog_photo_1.jpeg" alt="Photo">
     </div>
     <a href="#contact" class="cta-button">Contact</a>
   </header>
@@ -120,7 +137,15 @@
 
   <section id="hangout">
     <h2>Where we will hang out</h2>
-    <p>We believe dogs should enjoy their day just as much as their humans do. We'll spend our time exploring local parks, going on gentle walks, playing fetch, and enjoying plenty of snuggles at home. Our days are safe, structured, and full of joy.</p>
+    <p>During the day for both boarding and daycare we will spend most of the day in between walks hanging out in the designated annex room and garden. There will be plenty to do with a large selection of toys to chew and chase, and plenty of varied beds to choose from for the all important naps and rest time.</p>
+    <p>The annex is fully air conditioned for the hotter months, and fully heated for the colder ones. The garden laid to astroturf is shaded by sun awnings when  needed too.</p>
+    <div class="photo-grid">
+      <img src="https://raw.githubusercontent.com/finnbunker/finnbunker.github.io/refs/heads/main/dog_photo_1.jpeg" alt="Photo">
+      <img src="https://raw.githubusercontent.com/finnbunker/finnbunker.github.io/refs/heads/main/dog_photo_1.jpeg" alt="Photo">
+      <img src="https://raw.githubusercontent.com/finnbunker/finnbunker.github.io/refs/heads/main/dog_photo_1.jpeg" alt="Photo">
+      <img src="https://raw.githubusercontent.com/finnbunker/finnbunker.github.io/refs/heads/main/dog_photo_1.jpeg" alt="Photo">
+    </div>
+    
   </section>
 
   <section id="location">
