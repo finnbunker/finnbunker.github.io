@@ -71,6 +71,44 @@
       color: #4d3e3e;
     }
 
+    header.header-with-bg {
+      background-image: url('https://raw.githubusercontent.com/finnbunker/finnbunker.github.io/refs/heads/main/dog_photo_1.jpeg');
+      background-size: cover;
+      background-position: center;
+      margin: 0 auto;
+      width: 90%;
+      max-width: 1200px;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-content {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 2em;
+      border-radius: 12px;
+    }
+
+    .header-content h1 {
+      font-size: 2em;
+      margin: 0;
+      color: #4d3e3e;
+    }
+
+    @media (min-width: 768px) {
+      .header-content h1 {
+        font-size: 3em;
+    }
+
+    .cta-button {
+      font-size: 1.2em;
+      }
+    } 
+
     .photo-circle {
       display: flex;
       justify-content: center;
@@ -153,13 +191,13 @@
 </head>
 <body>
 
-  <header>
-    <h1>Noah's Ark Animal Services</h1>
-    <div class="photo-circle">
-      <img src="https://raw.githubusercontent.com/finnbunker/finnbunker.github.io/refs/heads/main/dog_photo_1.jpeg" alt="Photo">
+  <header class="header-with-bg">
+    <div class="header-content">
+      <h1>Noah's Ark Animal Services</h1>
+      <a href="#contact" class="cta-button">Contact</a>
     </div>
-    <a href="#contact" class="cta-button">Contact</a>
   </header>
+
 
   <section id="about">
     <h2>About Noah's Ark</h2>
